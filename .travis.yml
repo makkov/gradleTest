@@ -1,6 +1,23 @@
+#language: java
+#
+#sudo: required
+#notifications:
+#  email:
+#    recipients:
+#    - maxim_86nva@mail.ru
+#    on_success: always # default: change
+#
+#
 language: java
+jdk: oraclejdk8
 
-sudo: required
+before_install: ./gradlew wrapper
+
+install: true
+script:
+- ./gradlew assemble
+- ./gradlew check
+
 notifications:
   email:
     recipients:
