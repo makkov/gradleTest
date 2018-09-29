@@ -1,12 +1,3 @@
-#language: java
-#
-#sudo: required
-#notifications:
-#  email:
-#    recipients:
-#    - maxim_86nva@mail.ru
-#    on_success: always # default: change
-
 language: java
 jdk: oraclejdk8
 
